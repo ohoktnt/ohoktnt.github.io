@@ -2,6 +2,18 @@
 /* LANDING PAGE WITH TWO BUTTONS FOR INTERACTIVE DISPLAY */
 /* CLICK ON ABOUT OR PROJECT WILL SHIFT LANDING OVER AND SHOW CONTENT */
 
+body {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  /* padding-bottom: 3rem; */
+  /* background-color: #F4F1EC; */
+  background-image: url('/assets/background.jpg');
+  color: #545149;
+  font-size: 1.25em;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
 .landing-info {
   border: 2px solid red;
 }
