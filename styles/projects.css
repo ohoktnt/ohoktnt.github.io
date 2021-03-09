@@ -1,2 +1,9 @@
 /* WHEN PROJECTS IS CLICKED */
 /* SHOW Projects like cards with PICTURE, TITLE, DESC, STACK */
+
+.projects-info {
+  color: green;
+  visibility: hidden;
+  width: 0;
+  background-color: white;
+}

@@ -1,6 +1,9 @@
 /* DESIGN LAYOUT */
 /* LANDING PAGE WITH TWO BUTTONS FOR INTERACTIVE DISPLAY */
 /* CLICK ON ABOUT OR PROJECT WILL SHIFT LANDING OVER AND SHOW CONTENT */
+html {
+  height: 100%;
+}
 
 body {
   display: flex;
@@ -11,14 +14,14 @@ body {
   color: #FFF;
   font-size: 1.25em;
   font-family: 'Source Sans Pro', sans-serif;
-  border: 2px solid green;
+  /* border: 2px solid green; */
   background-image: url('../assets/background1.jpg');
   background-size: 100%;
   height:100%;
 }
 
 .landing-info {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   display: flex;
   flex-direction: column;
   justify-items: center;

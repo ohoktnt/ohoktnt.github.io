@@ -1,2 +1,9 @@
 /* WHEN ABOUT IS CLICKED */
 /* SHOW INTRODUCTION FOR SELF, THEN STACK ICONS */
+
+.about-me-info {
+  color: green;
+  visibility: hidden;
+  width: 0;
+  background-color: white;
+}
