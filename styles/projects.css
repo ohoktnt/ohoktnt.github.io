@@ -92,8 +92,8 @@
   }
 }
 
-/* leave it for phone */
-@media screen and (min-width: 300px) and (max-width: 1000px) {
+/* leave it for smaller window */
+@media screen and (min-width: 725px) and (max-width: 1000px) {
   .projects-info h1 {
     margin: 1em;
     text-align: center;
