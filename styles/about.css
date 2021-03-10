@@ -2,8 +2,32 @@
 /* SHOW INTRODUCTION FOR SELF, THEN STACK ICONS */
 
 .about-me-info {
-  color: green;
+  color: black;
   visibility: hidden;
   width: 0;
   background-color: white;
+  display: flex;
+  justify-content: center;
+}
+
+.about-me-info h1 {
+  margin: 2em;
+  text-align: center;
+}
+
+.about-me-info-container {
+  width: 80%;
+}
+
+.stack-group {
+  margin-top: 2em;
+  width: 80%;
+  display:flex;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.stack-group img {
+  margin: 0.5em;
 }
