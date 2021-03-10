@@ -13,6 +13,7 @@ $(document).ready(function() {
 
   const projectCards = function(projects) {
     let html = '';
+    const window = $(document).width();
     // loop through array, and make html
     for (project of projects) {
       html += `
@@ -21,18 +22,19 @@ $(document).ready(function() {
       </div>
         <div class="project-content">
           <h3>${project.title}</h3>
-          <p>${project.desc}</p>
+          <p id="project-desc">${project.desc}</p>
           <h5><a class="nav-link" href="${project.link}" target="_blank" ><i class="fas fa-external-link-alt"></i> View Github Repo </a></h5>
       </div>
       </div>`
     }
-    html += '<br><br><br>'
-    console.log(html)
+    html += '<br><br><br>';
     return html;
+    
   }
 
   // generate the project cards based on list
   $('.projects-info-container').append(projectCards(projects))
+
 
   // show project details on hover
   $('.project-window').hover(function() {

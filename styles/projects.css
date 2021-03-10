@@ -126,9 +126,8 @@
     width:15em;
   }
 
+  /* make the desc disppear to save some space */
   .project-content p {
-    overflow-wrap: break-word;
-    font-weight: 400;
-    font-size: 1em;
+    display:none;
   }
 }
