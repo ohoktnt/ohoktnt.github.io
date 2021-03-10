@@ -12,8 +12,9 @@
   height: 100%;
 }
 
-.projects-info.h1 {
+.projects-info h1 {
   margin: 2em;
+  text-align: center;
 }
 
 .project-card {
