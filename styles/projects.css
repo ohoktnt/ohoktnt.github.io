@@ -2,8 +2,51 @@
 /* SHOW Projects like cards with PICTURE, TITLE, DESC, STACK */
 
 .projects-info {
-  color: green;
+  color: black;
   visibility: hidden;
   width: 0;
   background-color: white;
+  display: flex;
+  justify-content: center;
+  overflow-y: scroll;
+  height: 100%;
 }
+
+.projects-info.h1 {
+  margin: 2em;
+}
+
+.project-card {
+  width: 40em;
+  height: 25em;
+  margin: 5em;
+}
+
+.project-window {
+  border: 3px solid rgb(197, 197, 197);
+  border-top: 20px solid rgb(197, 197, 197); 
+  border-radius: 5px;
+  /* margin: 5em; */
+  width: 40em;
+  height: 25em;
+  background-size: 40em 25em;
+}
+
+.project-content {
+  text-align: center;
+  visibility: hidden;
+  position: relative;
+  /* background-color: rgba(255, 255, 255, .6);
+  border-radius: 50px; */
+  top: -20em;
+  left: 5em;
+  width:30em;
+}
+
+.project-content p {
+  overflow-wrap: break-word;
+}
+
+/* .project-content a.nav-link {
+  color: rgb(255, 166, 0);
+} */
