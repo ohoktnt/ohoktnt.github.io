@@ -3,8 +3,7 @@
 
 .projects-info {
   color: green;
-  /* visibility: hidden; */
-  width: 50%;
+  visibility: hidden;
+  width: 0;
   background-color: white;
-  display: none;
 }
