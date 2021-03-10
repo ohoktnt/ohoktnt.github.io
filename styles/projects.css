@@ -46,6 +46,7 @@
 
 .project-content p {
   overflow-wrap: break-word;
+  font-weight: 500;
 }
 
 /* .project-content a.nav-link {
