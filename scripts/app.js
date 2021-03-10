@@ -22,9 +22,7 @@ $(document).ready(function() {
         <div class="project-content">
           <h3>${project.title}</h3>
           <p>${project.desc}</p>
-          <br>
-          <br>
-          <h4><a class="nav-link" href="${project.link}" target="_blank" ><i class="fas fa-external-link-alt"></i> View Github Repo </a></h4>
+          <h5><a class="nav-link" href="${project.link}" target="_blank" ><i class="fas fa-external-link-alt"></i> View Github Repo </a></h5>
       </div>
       </div>`
     }

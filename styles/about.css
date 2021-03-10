@@ -8,6 +8,8 @@
   background-color: white;
   display: flex;
   justify-content: center;
+  overflow-y: scroll;
+  height: 100%;
 }
 
 .about-me-info h1 {
