@@ -77,13 +77,15 @@ body {
 }
 
 .about-me-info-bottom {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   background-color: white;
 
 }
 
 .project-info-bottom{
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
   background-color: white;
 
 }

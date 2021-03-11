@@ -67,6 +67,8 @@ $(document).ready(function() {
       // $(this).prev().css('opacity', '1')
     }
   )
+
+  // refresh screen with window size change
   let screen = $(window).width();
 
   $(window).resize(function() {
@@ -119,18 +121,20 @@ $(document).ready(function() {
     } else {
       console.log('scroll down instead!')
       if($('.about-me-info-bottom').attr('status') === 'closed'){
+        // hide project if opened
         $('.project-info-bottom').css('display', 'none')
-        $('#bottom-slide').css('display', 'inline')
+        // show the about
         $('.about-me-info-bottom').attr('status', 'open')
+        $('#bottom-slide').css('display', 'inline')
         $('.about-me-info-bottom').slideDown("slow", function() {
-          $('.about-me-info-bottom').css('visibility', 'visible')
+          $('.about-me-info-bottom').css('display', 'inline')
           $('html, body').animate({scrollTop: $(window).height()},1000)
         })      
       } else {
-        $('.project-info-bottom').css('visibility', 'none')
+        // $('.project-info-bottom').css('visibility', 'none')
         $('.about-me-info-bottom').attr('status', 'closed')
         $('.about-me-info-bottom').slideUp("slow", function() {
-          $('.about-me-info-bottom').css('visibility', 'hidden')
+          $('.about-me-info-bottom').css('display', 'none')
           $('html, body').animate({scrollTop: 0},1000)
           $('#bottom-slide').css('display', 'none')
         })   
@@ -181,20 +185,22 @@ $(document).ready(function() {
     } else {
       console.log('trying to scroll!')
       if($('.project-info-bottom').attr('status') === 'closed'){
-        $('#bottom-slide').css('display', 'inline')
+        // hide aboutif opened
         $('.about-me-info-bottom').css('display', 'none')
+        // show the projects 
         $('.project-info-bottom').attr('status', 'open')
+        $('#bottom-slide').css('display', 'inline')
         $('.project-info-bottom').slideDown("slow", function() {
-          $('.project-info-bottom').css('visibility', 'visible')
+          $('.project-info-bottom').css('display', 'inline')
           $('html, body').animate({scrollTop: $(window).height()},500)
         })      
       } else {
         $('.project-info-bottom').attr('status', 'closed')
         $('.project-info-bottom').slideUp("slow", function() {
-          $('.project-info-bottom').css('visibility', 'hidden')
+          $('.project-info-bottom').css('display', 'none')
+          $('.about-me-info-bottom').css('display', 'none')
           $('html, body').animate({scrollTop: 0},1000)
           $('#bottom-slide').css('display', 'none')
-          $('.about-me-info-bottom').css('display', 'inline')
 
         })   
       }
