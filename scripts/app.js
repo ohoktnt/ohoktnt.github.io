@@ -119,6 +119,7 @@ $(document).ready(function() {
     } else {
       console.log('scroll down instead!')
       if($('.about-me-info-bottom').attr('status') === 'closed'){
+        $('.project-info-bottom').css('visibility', 'hidden')
         $('#bottom-slide').css('display', 'inline')
         $('.about-me-info-bottom').attr('status', 'open')
         $('.about-me-info-bottom').slideDown("slow", function() {
@@ -126,6 +127,7 @@ $(document).ready(function() {
           $('html, body').animate({scrollTop: $(window).height()},500)
         })      
       } else {
+        $('.project-info-bottom').css('visibility', 'hidden')
         $('.about-me-info-bottom').attr('status', 'closed')
         $('.about-me-info-bottom').slideUp("slow", function() {
           $('.about-me-info-bottom').css('visibility', 'hidden')
