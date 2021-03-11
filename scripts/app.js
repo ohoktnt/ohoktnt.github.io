@@ -120,6 +120,8 @@ $(document).ready(function() {
       console.log('scroll down instead!')
       if($('.about-me-info-bottom').attr('status') === 'closed'){
         $('.project-info-bottom').css('display', 'none')
+        $('.project-info-bottom').attr('status', 'closed')
+
         $('#bottom-slide').css('display', 'inline')
         $('.about-me-info-bottom').attr('status', 'open')
         $('.about-me-info-bottom').slideDown("slow", function() {
@@ -182,6 +184,7 @@ $(document).ready(function() {
       console.log('trying to scroll!')
       if($('.project-info-bottom').attr('status') === 'closed'){
         $('#bottom-slide').css('display', 'inline')
+        $('.about-me-info-bottom').attr('status', 'closed')
         $('.about-me-info-bottom').css('display', 'none')
         $('.project-info-bottom').attr('status', 'open')
         $('.project-info-bottom').slideDown("slow", function() {
