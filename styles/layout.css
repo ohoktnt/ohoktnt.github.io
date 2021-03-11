@@ -79,13 +79,19 @@ body {
 .about-me-info-bottom {
   visibility: hidden;
   background-color: white;
-
+  display: flex;
+  justify-content: center;
 }
+
+/* .about-me-info-bottom .about-me-info-container {
+
+} */
 
 .project-info-bottom{
   visibility: hidden;
   background-color: white;
-
+  display: flex;
+  justify-content: center;
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {

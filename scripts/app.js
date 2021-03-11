@@ -189,7 +189,7 @@ $(document).ready(function() {
         $('.project-info-bottom').attr('status', 'open')
         $('.project-info-bottom').slideDown("slow", function() {
           $('.project-info-bottom').css('visibility', 'visible')
-          $('html, body').animate({scrollTop: $(window).height()},500)
+          $('html, body').animate({scrollTop: $(window).height()},1000)
         })      
       } else {
         $('.project-info-bottom').attr('status', 'closed')
