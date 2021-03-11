@@ -81,17 +81,22 @@ body {
   background-color: white;
   display: flex;
   justify-content: center;
+  padding-top: 2em;
 }
 
-/* .about-me-info-bottom .about-me-info-container {
 
-} */
+.about-me-info-bottom h1 {
+  margin-bottom: 1em;
+  
+}
 
 .project-info-bottom{
   visibility: hidden;
   background-color: white;
   display: flex;
   justify-content: center;
+  padding-top: 2em;
+
 }
 
 @media screen and (min-width: 300px) and (max-width: 1000px) {
