@@ -71,7 +71,9 @@ $(document).ready(function() {
 
   $(window).resize(function() {
     screen = $(window).width();
-    location.reload();
+    if(screen > 400) {
+      location.reload();
+    }
   })
 
   // TOGGLE BUTTONS
