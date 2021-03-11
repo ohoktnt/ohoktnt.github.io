@@ -140,8 +140,8 @@
   }
   
   .project-card {
-    width: 30em;
-    height: 18.75em;
+    width: 20em;
+    height: 12.5em;
     margin: 2.5em;
   }
   
@@ -150,9 +150,9 @@
     border-top: 20px solid rgb(197, 197, 197); 
     border-radius: 5px;
     /* margin: 5em; */
-    width: 30em;
-    height: 18.75em;
-    background-size: 30em 18.75em;
+    width: 20em;
+    height: 12.5em;
+    background-size: 20em 12.5em;
   }
   
   .project-content {
@@ -161,14 +161,13 @@
     position: relative;
     /* background-color: rgba(255, 255, 255, .6);
     border-radius: 50px; */
-    top: -16em;
-    left: 2em;
-    width: 90%;
+    top: -10em;
+    left: 2.5em;
+    width:15em;
   }
 
+  /* make the desc disppear to save some space */
   .project-content p {
-    overflow-wrap: break-word;
-    font-weight: 500;
-    font-size: 1em;
+    display:none;
   }
 }
