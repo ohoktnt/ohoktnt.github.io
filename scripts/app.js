@@ -194,7 +194,7 @@ $(document).ready(function() {
           $('.project-info-bottom').css('visibility', 'hidden')
           $('html, body').animate({scrollTop: 0},1000)
           $('#bottom-slide').css('display', 'none')
-          $('.about-me-info-bottom').css('display', 'inline')
+          $('.about-me-info-bottom').css('display', 'none')
 
         })   
       }
