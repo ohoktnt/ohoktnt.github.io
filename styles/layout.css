@@ -19,6 +19,7 @@ body {
   /* border: 2px solid green; */
   background-image: url('../assets/background1.jpg');
   background-size: cover;
+  background-repeat: no-repeat;
   height:100%;
   width: 100%;
 }
@@ -95,6 +96,7 @@ body {
   display: flex;
   justify-content: center;
   padding-top: 2em;
+  width: auto;
 
 }
 
@@ -106,4 +108,9 @@ body {
   #bottom-slide {
     background-color: white;
   }
+
+  .landing-buttons {
+    width: 60%;
+  }
+
 }
