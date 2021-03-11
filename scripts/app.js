@@ -13,7 +13,6 @@ $(document).ready(function() {
 
   const projectCards = function(projects) {
     let html = '';
-    const window = $(document).width();
     // loop through array, and make html
     for (project of projects) {
       html += `
@@ -68,18 +67,39 @@ $(document).ready(function() {
       // $(this).prev().css('opacity', '1')
     }
   )
+  let screen = $(window).width();
 
+  $(window).resize(function() {
+    screen = $(window).width();
+    location.reload();
+  })
 
   // TOGGLE BUTTONS
   $('#about-me').on('click', () => {
     const sideWidth = $('.about-me-info').width();
     const sideWidthP = $('.projects-info').width();
-
-    if(sideWidthP !== 0) {
-      $('.projects-info').animate({
-        width: 0
-      },1000, function() {
-        $('.projects-info').css('visibility', 'hidden')
+    // for window view
+    if(screen > 724) {
+  
+      if(sideWidthP !== 0) {
+        $('.projects-info').animate({
+          width: 0
+        },1000, function() {
+          $('.projects-info').css('visibility', 'hidden')
+          if(sideWidth === 0) {
+            $('.about-me-info').animate({
+              width: '100%'
+            },1000)
+            $('.about-me-info').css('visibility', 'visible')
+          } else {
+            $('.about-me-info').animate({
+              width: 0
+            },1000, function() {
+              $('.about-me-info').css('visibility', 'hidden')
+            })
+          }
+        })
+      } else {
         if(sideWidth === 0) {
           $('.about-me-info').animate({
             width: '100%'
@@ -92,34 +112,54 @@ $(document).ready(function() {
             $('.about-me-info').css('visibility', 'hidden')
           })
         }
-      })
-    } else {
-      if(sideWidth === 0) {
-        $('.about-me-info').animate({
-          width: '100%'
-        },1000)
-        $('.about-me-info').css('visibility', 'visible')
-      } else {
-        $('.about-me-info').animate({
-          width: 0
-        },1000, function() {
-          $('.about-me-info').css('visibility', 'hidden')
-        })
       }
-
+      // for mobile view
+    } else {
+      console.log('scroll down instead!')
+      if($('.about-me-info-bottom').attr('status') === 'closed'){
+        $('#bottom-slide').css('display', 'inline')
+        $('.about-me-info-bottom').attr('status', 'open')
+        $('.about-me-info-bottom').slideDown("slow", function() {
+          $('.about-me-info-bottom').css('visibility', 'visible')
+          $('html, body').animate({scrollTop: $(window).height()},500)
+        })      
+      } else {
+        $('.about-me-info-bottom').attr('status', 'closed')
+        $('.about-me-info-bottom').slideUp("slow", function() {
+          $('.about-me-info-bottom').css('visibility', 'hidden')
+          $('html, body').animate({scrollTop: 0},1000)
+          $('#bottom-slide').css('display', 'none')
+        })   
+      }
     }
 
   })
 
   $('#projects').on('click', () => {
-    const sideWidth = $('.projects-info').width();
-    const sideWidthA = $('.about-me-info').width();
-    
-    if(sideWidthA !== 0) {
-      $('.about-me-info').animate({
-        width: 0
-      },1000, function() {
-        $('.about-me-info').css('visibility', 'hidden')
+    // for window view
+    if (screen > 724) {
+      const sideWidth = $('.projects-info').width();
+      const sideWidthA = $('.about-me-info').width();
+      
+      if(sideWidthA !== 0) {
+        $('.about-me-info').animate({
+          width: 0
+        },1000, function() {
+          $('.about-me-info').css('visibility', 'hidden')
+          if(sideWidth === 0) {
+            $('.projects-info').animate({
+              width: '100%'
+            },1000)
+            $('.projects-info').css('visibility', 'visible')
+          } else {
+            $('.projects-info').animate({
+              width: 0
+            },1000, function() {
+              $('.projects-info').css('visibility', 'hidden')
+            })
+          }
+        })
+      } else {
         if(sideWidth === 0) {
           $('.projects-info').animate({
             width: '100%'
@@ -132,21 +172,30 @@ $(document).ready(function() {
             $('.projects-info').css('visibility', 'hidden')
           })
         }
-      })
-    } else {
-      if(sideWidth === 0) {
-        $('.projects-info').animate({
-          width: '100%'
-        },1000)
-        $('.projects-info').css('visibility', 'visible')
-      } else {
-        $('.projects-info').animate({
-          width: 0
-        },1000, function() {
-          $('.projects-info').css('visibility', 'hidden')
-        })
       }
-    }    
+    // for mobile view
+    } else {
+      console.log('trying to scroll!')
+      if($('.project-info-bottom').attr('status') === 'closed'){
+        $('#bottom-slide').css('display', 'inline')
+        $('.about-me-info-bottom').css('display', 'none')
+        $('.project-info-bottom').attr('status', 'open')
+        $('.project-info-bottom').slideDown("slow", function() {
+          $('.project-info-bottom').css('visibility', 'visible')
+          $('html, body').animate({scrollTop: $(window).height()},500)
+        })      
+      } else {
+        $('.project-info-bottom').attr('status', 'closed')
+        $('.project-info-bottom').slideUp("slow", function() {
+          $('.project-info-bottom').css('visibility', 'hidden')
+          $('html, body').animate({scrollTop: 0},1000)
+          $('#bottom-slide').css('display', 'none')
+          $('.about-me-info-bottom').css('display', 'inline')
+
+        })   
+      }
+    }
+
   })
 
 

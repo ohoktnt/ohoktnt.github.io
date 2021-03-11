@@ -131,3 +131,44 @@
     display:none;
   }
 }
+
+/* for phone */
+@media screen and (min-width: 300px) and (max-width: 725px) {
+  .projects-info h1 {
+    margin: 1em;
+    text-align: center;
+  }
+  
+  .project-card {
+    width: 30em;
+    height: 18.75em;
+    margin: 2.5em;
+  }
+  
+  .project-window {
+    border: 3px solid rgb(197, 197, 197);
+    border-top: 20px solid rgb(197, 197, 197); 
+    border-radius: 5px;
+    /* margin: 5em; */
+    width: 30em;
+    height: 18.75em;
+    background-size: 30em 18.75em;
+  }
+  
+  .project-content {
+    text-align: center;
+    visibility: hidden;
+    position: relative;
+    /* background-color: rgba(255, 255, 255, .6);
+    border-radius: 50px; */
+    top: -16em;
+    left: 2em;
+    width: 90%;
+  }
+
+  .project-content p {
+    overflow-wrap: break-word;
+    font-weight: 500;
+    font-size: 1em;
+  }
+}
