@@ -71,7 +71,7 @@ $(document).ready(function() {
 
   $(window).resize(function() {
     screen = $(window).width();
-    if(screen > 400) {
+    if(screen > 725) {
       location.reload();
     }
   })
