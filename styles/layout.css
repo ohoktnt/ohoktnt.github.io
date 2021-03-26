@@ -23,6 +23,10 @@ body {
   height:100%;
   width: 100%;
 }
+
+#portfolio-thumbnail {
+  display: none;
+}
 /* NOTE: update background picture based on viewport, when smaller, it double at the bottom */
 
 .window-view {
