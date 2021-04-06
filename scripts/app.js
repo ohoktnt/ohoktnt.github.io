@@ -5,6 +5,7 @@
 $(document).ready(function() {
   // PROJECTS CARDS
   const projects = [
+    {title: 'Not Hotdog Clone', desc: 'A android app that identifies if the picture selected is a hotdog. Select photo from camera roll or take one in real time!', link: 'https://github.com/ohoktnt/Not-Hotdog-Clone', screenshot: 'assets/projects/nothotdog.png'},
     {title: 'V-Market', desc: "A virtual marketplace that redfines online shopping. It brings buyers and sellers together on a 2D map to simulate the real-life experience. Explore and shop at multiple vendors on one platform with friends!", link:"https://github.com/ohoktnt/v-market", screenshot: 'assets/projects/v-market-loggedin.png'},
     {title: 'Scheduler', desc: "Using the latest tools and techniques to build a single page application using React. This modern client application allows users to book and cancel interviews. This app was throughly tested, including: unit, integration, and end-to-end testing.", link: "https://github.com/ohoktnt/scheduler", screenshot: 'assets/projects/Scheduler-Full.png'},
     {title: 'Tweeter', desc: "A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and plain ol' CSS3.", link: "https://github.com/ohoktnt/tweeter", screenshot: 'assets/projects/Tweeter-Desktop.png'},
