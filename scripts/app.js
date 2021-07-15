@@ -5,7 +5,7 @@
 $(document).ready(function() {
   // PROJECTS CARDS
   const projects = [
-    {title: 'Amazon Clone', desc: 'A fully functional E-Commerce store with user authentications, responsive cart checkouts, real payments, and order history pages per user. The application was deployed on Firebase and uses the Cloud Firestore Database. ', link: 'https://clone-87b0d.web.app/', screenshot: 'assets/project/amazon.png'},
+    {title: 'Amazon Clone', desc: 'A fully functional E-Commerce store with user authentications, responsive cart checkouts, real payments, and order history pages per user. The application was deployed on Firebase and uses the Cloud Firestore Database. ', link: 'https://clone-87b0d.web.app/', screenshot: 'assets/projects/amazon.png'},
     {title: 'Vanna Makeup Artistry', desc: 'A deployed react website for a Makeup and Events business to showcase the services and galleries of images.', link: 'https://vannamakeup.com/', screenshot: 'assets/projects/vanna.png'},
     {title: 'Not Hotdog Clone', desc: 'A android app that identifies if the picture selected is a hotdog. Select photo from camera roll or take one in real time!', link: 'https://github.com/ohoktnt/Not-Hotdog-Clone', screenshot: 'assets/projects/nothotdog.png'},
     {title: 'V-Market', desc: "A virtual marketplace that redfines online shopping. It brings buyers and sellers together on a 2D map to simulate the real-life experience. Explore and shop at multiple vendors on one platform with friends!", link:"https://github.com/ohoktnt/v-market", screenshot: 'assets/projects/v-market-loggedin.png'},
