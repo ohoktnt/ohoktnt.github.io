@@ -5,13 +5,13 @@
 $(document).ready(function() {
   // PROJECTS CARDS
   const projects = [
-    {title: 'Amazon Clone', desc: 'A fully functional E-Commerce store with user authentications, responsive cart checkouts, real payments, and order history pages per user. The application was deployed on Firebase and uses the Cloud Firestore Database. ', link: 'https://clone-87b0d.web.app/', screenshot: 'assets/projects/amazon.png'},
-    {title: 'Vanna Makeup Artistry', desc: 'A deployed react website for a Makeup and Events business to showcase the services and galleries of images.', link: 'https://vannamakeup.com/', screenshot: 'assets/projects/vanna.png'},
-    {title: 'Not Hotdog Clone', desc: 'A android app that identifies if the picture selected is a hotdog. Select photo from camera roll or take one in real time!', link: 'https://github.com/ohoktnt/Not-Hotdog-Clone', screenshot: 'assets/projects/nothotdog.png'},
-    {title: 'V-Market', desc: "A virtual marketplace that redfines online shopping. It brings buyers and sellers together on a 2D map to simulate the real-life experience. Explore and shop at multiple vendors on one platform with friends!", link:"https://github.com/ohoktnt/v-market", screenshot: 'assets/projects/v-market-loggedin.png'},
-    {title: 'Scheduler', desc: "Using the latest tools and techniques to build a single page application using React. This modern client application allows users to book and cancel interviews. This app was throughly tested, including: unit, integration, and end-to-end testing.", link: "https://github.com/ohoktnt/scheduler", screenshot: 'assets/projects/Scheduler-Full.png'},
-    {title: 'Tweeter', desc: "A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and plain ol' CSS3.", link: "https://github.com/ohoktnt/tweeter", screenshot: 'assets/projects/Tweeter-Desktop.png'},
-    {title: 'Tiny App', desc: "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).", link: "https://github.com/ohoktnt/tinyapp", screenshot: 'assets/projects/TinyApp-Main.png'}
+    {title: 'Amazon Clone', demo: "Live Demo", desc: 'A fully functional E-Commerce store with user authentications, responsive cart checkouts, real payments, and order history pages per user. The application was deployed on Firebase and uses the Cloud Firestore Database. ', link: 'https://clone-87b0d.web.app/', screenshot: 'assets/projects/amazon.png'},
+    {title: 'Vanna Makeup Artistry', demo: "Live Demo", desc: 'A deployed react website for a Makeup and Events business to showcase the services and galleries of images.', link: 'https://vannamakeup.com/', screenshot: 'assets/projects/vanna.png'},
+    {title: 'Not Hotdog Clone', demo: "Github Repo", desc: 'A android app that identifies if the picture selected is a hotdog. Select photo from camera roll or take one in real time!', link: 'https://github.com/ohoktnt/Not-Hotdog-Clone', screenshot: 'assets/projects/nothotdog.png'},
+    {title: 'V-Market', demo: "Github Repo", desc: "A virtual marketplace that redfines online shopping. It brings buyers and sellers together on a 2D map to simulate the real-life experience. Explore and shop at multiple vendors on one platform with friends!", link:"https://github.com/ohoktnt/v-market", screenshot: 'assets/projects/v-market-loggedin.png'},
+    {title: 'Scheduler', demo: "Github Repo", desc: "Using the latest tools and techniques to build a single page application using React. This modern client application allows users to book and cancel interviews. This app was throughly tested, including: unit, integration, and end-to-end testing.", link: "https://github.com/ohoktnt/scheduler", screenshot: 'assets/projects/Scheduler-Full.png'},
+    {title: 'Tweeter', demo: "Github Repo", desc: "A simple single-page AJAX-based Twitter clone that uses jQuery, HTML5 and plain ol' CSS3.", link: "https://github.com/ohoktnt/tweeter", screenshot: 'assets/projects/Tweeter-Desktop.png'},
+    {title: 'Tiny App', demo: "Github Repo", desc: "TinyApp is a full stack web application built with Node and Express that allows users to shorten long URLs (à la bit.ly).", link: "https://github.com/ohoktnt/tinyapp", screenshot: 'assets/projects/TinyApp-Main.png'}
   ]
 
   const projectCards = function(projects) {
@@ -25,7 +25,7 @@ $(document).ready(function() {
         <div class="project-content">
           <h3>${project.title}</h3>
           <p id="project-desc">${project.desc}</p>
-          <h5><a class="nav-link" href="${project.link}" target="_blank" ><i class="fas fa-external-link-alt"></i> View Github Repo </a></h5>
+          <h5><a class="nav-link" href="${project.link}" target="_blank" ><i class="fas fa-external-link-alt"></i> View ${project.demo} </a></h5>
       </div>
       </div>`
     }
